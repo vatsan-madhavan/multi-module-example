@@ -2,7 +2,7 @@
 
 namespace mergeddll
 {
-    public class Class1
+    public class DummyClass
     {
     }
 }

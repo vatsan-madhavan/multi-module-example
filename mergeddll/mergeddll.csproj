@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\a\a.csproj" >
+        <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+        <OutputItemType>AddModules</OutputItemType>
+    </ProjectReference>
+    <ProjectReference Include="..\b\b.csproj" >
+        <ReferenceOutputAssembly>false></ReferenceOutputAssembly>
+        <OutputItemType>AddModules</OutputItemType>
+    </ProjectReference>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+</Project>

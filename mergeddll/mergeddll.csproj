@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\a\a.csproj" >
+    <ProjectReference Include="..\a\a.csproj" Condition="'$(DesignTimeBuild)' != 'true'">
         <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
         <OutputItemType>AddModules</OutputItemType>
     </ProjectReference>
-    <ProjectReference Include="..\b\b.csproj" >
+    <ProjectReference Include="..\b\b.csproj" Condition="'$(DesignTimeBuild)' != 'true'">
         <ReferenceOutputAssembly>false></ReferenceOutputAssembly>
         <OutputItemType>AddModules</OutputItemType>
     </ProjectReference>
